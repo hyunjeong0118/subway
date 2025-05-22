@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Noto sans KR';
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+/* 
+주조색 #009223 보조색 #62ce08
+메인 가운데 1200px
+pc 1200px
+tablet 600~1199px
+mobile ~599px
+
+비디오태그 사용 무한자동재생
+SUBWAY 써브웨이 파비콘
+swiper / auto / 2초 / 여백없이 / 화살표 #fff
+a태그 위치이동
+*/
+
+
+/* header_wrap */
+#header_wrap {
+  height: 50px;
+  border-bottom: 3px solid #009223;
+}
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.utill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.utill li a {
+  display: block;
+  padding: 5px 40px;
+  font-weight: 600;
+}
+
+.utill li a:hover {
+  color: #009223;
+}
+
+/* tablet 사이즈 */
+@media(max-width:1300px) {
+  #header_wrap {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  #header_wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .utill {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .utill li {
+    width: 33%;
+  }
+}
+
+/* header_wrap */
+/* Swiper / banner_main  */
+.banner_main {
+  height: 600px;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  --swiper-theme-color: #fff;
+}
+
+/* tablet 사이즈 */
+@media(max-width:1300px) {
+  .banner_main {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner_main .swiper-slide img {
+    width: 100%;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  .banner_main {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner_main .swiper-slide img {
+    width: 100%;
+  }
+}
+
+/* Swiper / banner_main  */
+/* promise */
+#promise {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title_main {
+  padding-top: 100px;
+  color: #009223;
+  margin-bottom: 10px;
+}
+
+.color {
+  color: #62ce08;
+}
+
+.title_sub {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+#promise h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+#promise h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+/* tablet 사이즈 */
+@media(max-width:1300px) {
+  #promise {
+    width: 100%;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  #promise {
+    width: 100%;
+  }
+
+  .promise_img img {
+    width: 100%;
+  }
+}
+
+/* promise */
+/* menu_wrap */
+#menu_wrap {
+  height: auto;
+  background-color: #efefef;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu li {
+  width: 23.5%;
+  background-color: #fff;
+}
+
+.menu li img {
+  width: 100%;
+}
+
+.menu li a {
+  display: block;
+}
+
+.menu li a p {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.menu li:hover {
+  opacity: 0.5;
+}
+
+/* tablet 사이즈 */
+@media(max-width:1300px) {
+  #menu_wrap {
+    width: 100%;
+  }
+
+  .menu li {
+    width: 48%;
+  }
+
+  .menu li:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .menu li:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  #menu_wrap {
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li:nth-child(3) {
+    margin-bottom: 20px;
+  }
+}
+
+/* menu_wrap */
+/* news */
+#news {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#news video {
+  display: block;
+}
+
+/* tablet 사이즈 */
+@media(max-width:1300px) {
+  #news {
+    width: 100%;
+  }
+
+  #news video {
+    width: 100%;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  #news {
+    width: 100%;
+  }
+
+  #news video {
+    width: 100%;
+  }
+}
+
+/* section3 */
+/* footer */
+#footer {
+  background-color: #333;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 30px 0;
+  margin-top: 100px;
+}
+
+@media(max-width:1300px) {
+  #footer {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+/* mobile 사이즈 */
+@media(max-width:600px) {
+  #footer {
+    width: 100%;
+  }
+}
+
+/* footer */
